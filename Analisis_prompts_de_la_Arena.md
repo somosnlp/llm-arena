@@ -8,79 +8,7 @@
 >
 > Trabajo final de prácticas de lingüista computacional en Somos NLP
 
-# Contenido
 
-[I. Introducción [4](#introducción)](#introducción)
-
-[II. Metodología [4](#metodología)](#metodología)
-
-[2.1 Diseño de los Prompts [4](#diseño-de-los-prompts)](#diseño-de-los-prompts)
-
-[2.1.1 Características generales exigidas para el diseño de los prompts [5](#características-generales-exigidas-para-el-diseño-de-los-prompts)](#características-generales-exigidas-para-el-diseño-de-los-prompts)
-
-[2.1.2 Preparación para evaluación en LLM Arena: [6](#preparación-para-evaluación-en-llm-arena)](#preparación-para-evaluación-en-llm-arena)
-
-[2.2 Metodología del análisis [6](#metodología-del-análisis)](#metodología-del-análisis)
-
-[2.2.1 Observación general de los datos [6](#observación-general-de-los-datos)](#observación-general-de-los-datos)
-
-[a) Herramientas y bibliotecas utilizadas [7](#_Toc204951160)](#_Toc204951160)
-
-[b) Procesamiento y análisis realizados [7](#_Toc204951161)](#_Toc204951161)
-
-[c) Resultados y propósitos [8](#_Toc204951162)](#_Toc204951162)
-
-[2.2.2 Mirada desde la lingüística computacional [8](#mirada-desde-la-lingüística-computacional)](#mirada-desde-la-lingüística-computacional)
-
-[a) Herramientas y bibliotecas utilizadas [8](#_Toc204951164)](#_Toc204951164)
-
-[b) Procesamiento y análisis realizados [8](#_Toc204951165)](#_Toc204951165)
-
-[c) Resultados y propósitos [9](#_Toc204951166)](#_Toc204951166)
-
-[III. Análisis [9](#análisis)](#análisis)
-
-[3.1 Análisis general [9](#análisis-general)](#análisis-general)
-
-[a) Implicaciones para la evaluación y fine- tuning [10](#a-implicaciones-para-la-evaluación-y-fine--tuning)](#a-implicaciones-para-la-evaluación-y-fine--tuning)
-
-[b) Desempeño desigual y sesgo en tareas de clasificación o generación [11](#b-desempeño-desigual-y-sesgo-en-tareas-de-clasificación-o-generación)](#b-desempeño-desigual-y-sesgo-en-tareas-de-clasificación-o-generación)
-
-[c) Longitud y estructura de los prompts [11](#c-longitud-y-estructura-de-los-prompts)](#c-longitud-y-estructura-de-los-prompts)
-
-[d) Longitud de prompts por país [12](#d-longitud-de-prompts-por-país)](#d-longitud-de-prompts-por-país)
-
-[e) Temas frecuentes por país [15](#e-temas-frecuentes-por-país)](#e-temas-frecuentes-por-país)
-
-[f) Distribución temática por país [16](#f-distribución-temática-por-país)](#f-distribución-temática-por-país)
-
-[3.1.1 Conclusiones del análisis general [17](#conclusiones-del-análisis-general)](#conclusiones-del-análisis-general)
-
-[3.2 Análisis lingüístico [18](#análisis-lingüístico)](#análisis-lingüístico)
-
-[a) Longitud media de respuestas y su vínculo con el estilo [19](#a-longitud-media-de-respuestas-y-su-vínculo-con-el-estilo)](#a-longitud-media-de-respuestas-y-su-vínculo-con-el-estilo)
-
-[b) Los conectores y la cohesión discursiva [21](#b-los-conectores-y-la-cohesión-discursiva)](#b-los-conectores-y-la-cohesión-discursiva)
-
-[c) Registro comunicativo y proximidad interpersonal [22](#c-registro-comunicativo-y-proximidad-interpersonal)](#c-registro-comunicativo-y-proximidad-interpersonal)
-
-[d) Tiempos verbales en las variantes del español [23](#d-tiempos-verbales-en-las-variantes-del-español)](#d-tiempos-verbales-en-las-variantes-del-español)
-
-[e) Registro de tono por país [25](#e-registro-de-tono-por-país)](#e-registro-de-tono-por-país)
-
-[f) Estilos discursivos [26](#f-estilos-discursivos)](#f-estilos-discursivos)
-
-[g) Análisis de los estilos discursivos por país [28](#g-análisis-de-los-estilos-discursivos-por-país)](#g-análisis-de-los-estilos-discursivos-por-país)
-
-[3.2.1 Conclusiones del análisis lingüístico [31](#conclusiones-del-análisis-lingüístico)](#conclusiones-del-análisis-lingüístico)
-
-[IV. Limitaciones y dificultades [32](#limitaciones-y-dificultades)](#limitaciones-y-dificultades)
-
-[4.1 Limitaciones [32](#limitaciones)](#limitaciones)
-
-[4.2 Dificultades [33](#dificultades)](#dificultades)
-
-[V. Conclusiones [34](#conclusiones)](#conclusiones)
 
 #  Introducción
 
