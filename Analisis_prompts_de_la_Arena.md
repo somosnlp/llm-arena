@@ -1,4 +1,4 @@
-> <img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image1.jpeg" style="width:1.27604in;height:1.27604in" />
+> ![](Analisis_prompts_de_la_Arena_media/media/image1.jpeg)
 >
 > Análisis de prompts de la Arena
 >
@@ -255,7 +255,7 @@ El conjunto total contiene **686 prompts**, distribuidos entre **7 países hispa
 | Nicaragua |          30           |
 |  México   |           6           |
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image2.png" style="width:5.90556in;height:3.69097in" />
+![](Analisis_prompts_de_la_Arena_media/media/image2.png)
 
 Con más de 240 prompts, España concentra más de un tercio del total del dataset. Esto sugiere que, si el modelo aprende patrones del dataset, puede estar más influenciado por formas idiomáticas, pragmáticas y estilos discursivos del español peninsular**,** lo cual es relevante para evaluar sesgos por país**.** Por otro lado, América Latina está representado de forma desigual; Colombia (180 aprox.) y Chile (90 aprox.) son los países latinoamericanos con mayor número de entradas, seguidos por Perú y Paraguay (ambos cerca de 70). México, a pesar de ser uno de los países hispanohablantes con mayor población, tiene solo unos 10 prompts, lo cual desequilibra su representación. Nicaragua aparece con menos de 40 prompts. Esto refuerza la necesidad de ampliar el corpus para países centroamericanos y del Caribe si se busca un modelo regionalmente balanceado.
 
@@ -281,7 +281,7 @@ Todo esto deriva en una evaluación injusta, pues durante la evaluación posteri
 
 Con respecto a la longitud de los prompts, el promedio es de aproximadamente 102 caracteres, lo que indica que la mayoría de las instrucciones son breves y directas, alineadas con el formato recomendado en el instructivo del Hackathon para evaluación de LLMs. El prompt más largo tiene 683 caracteres y pertenece a México. Se trata de una instrucción detallada para interpretar términos del argot del narcotráfico mexicano, mientras que el prompt más corto consta de sólo 7 caracteres (considerando el espacio)**,** este corresponde a España y dice simplemente “La mona”. Lo interesante de este caso es que ese prompt aparece dos veces y en ambos casos los modelos fueron capaces de interpretar esa simple instrucción como una referencia a la fábula del autor Tomás Iriarte, del siglo XVIII. Pese a lo breve de la instrucción los modelos reconocieron la referencia y generaron respuestas culturalmente contextualizadas, incluso fueron capaces de adaptar la moraleja a contextos actuales como las redes sociales, la superficialidad y la autenticidad. Este ejemplo demuestra que los modelos son capaces de activar conocimiento cultural complejo a partir de estímulos mínimos. También pone de relieve el reto de evaluar prompts muy cortos: su interpretación depende completamente del contexto inferido y no de la información explícita.
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image3.png" style="width:5.90556in;height:3.54306in" />
+![](Analisis_prompts_de_la_Arena_media/media/image3.png)
 
 ### d) Longitud de prompts por país
 
@@ -297,7 +297,7 @@ Con respecto a la longitud de los prompts, el promedio es de aproximadamente 102
 
 Si nos vamos al detalle, podemos ver esta tabla comparativa en la que se muestran la longitud media de los prompts por país, aquí se ven diferencias significativas que pueden darnos pistas sobre el nivel de complejidad, detalle y tipo de tarea que se planteó para cada variedad dialectal.
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image4.jpeg" style="width:5.90556in;height:3.54306in" />
+![](Analisis_prompts_de_la_Arena_media/media/image4.jpeg)
 
 Así, si nos vamos al detalle de cada país podemos ver que:
 
@@ -313,7 +313,7 @@ Países con prompts más largos (como México y Chile) probablemente favorecen t
 
 El siguiente diagrama de caja representa la similitud semántica (medida como similitud coseno, entre 0 y 1) entre las respuestas elegidas (“chosen”) y rechazadas (“rejected”) para cada país:
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image5.png" style="width:5.90556in;height:3.54306in" />
+![](Analisis_prompts_de_la_Arena_media/media/image5.png)
 
 Esta figura permite visualizar la distribución de datos numéricos de manera compacta. De esta forma la caja representa el 50% central de los datos (rango intercuartílico), es decir, donde se concentran la mayoría de las similitudes. La línea horizontal dentro de la caja indica la mediana (valor medio de la distribución). Las líneas que se extienden desde los bordes de la caja hasta el valor más lejano que no es considerado atípico se llaman “bigotes”. Los puntos individuales fuera de los bigotes son los outliers: respuestas que fueron mucho más similares o diferentes de lo esperado.
 
@@ -341,7 +341,7 @@ El modelo facebook/bart-large-mnli fue seleccionado por su capacidad comprobada 
 
 El proceso se aplicó a más de 600 entradas y los resultados se almacenaron en un archivo CSV. A partir de éste, generé el gráfico de barrasy el mapa de calor (heatmap) que muestro a continuación:
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image6.png" style="width:5.90556in;height:3.54306in" />
+![](Analisis_prompts_de_la_Arena_media/media/image6.png)
 
 Este gráfico de barras muestra la frecuencia total de temas en el dataset. Aquí se aprecia un fuerte enfoque en los aspectos sociales y culturales. **Estereotipos** destacan como la categoría dominante. Esto sugiere que muchas instrucciones buscan evaluar si los modelos detectan y reproducen prejuicios y sesgos culturales. **Cultura, lengua y sociedad** juntas representan gran parte del conjunto del dataset, muy en línea con el objetivo del hackathon de explorar la variación lingüística, cortesía, referencias locales y usos sociales de las distintas variantes del castellano. Historia y opinión están presentes en una menor proporción, aportando prompts centrados en contextualización local y evaluación de creencias.
 
@@ -349,7 +349,7 @@ Este gráfico de barras muestra la frecuencia total de temas en el dataset. Aqu�
 
 El mapa de calor permite observar la diversidad temática en relación con las variedades regionales del español, en él se refleja detalladamente el número de prompts por país y categoría:
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image7.png" style="width:5.90556in;height:2.95278in" />
+![](Analisis_prompts_de_la_Arena_media/media/image7.png)
 
 **España** tiene una amplia cobertura temática, pensemos también que es el país que cuenta con la mayor cantidad de datos, aun así, hay un énfasis en lengua, cultura y opinión. El marcado liderazgo en la temática de lengua podría sugerir un interés por evaluar la norma y la variación dialectal.
 
@@ -401,7 +401,7 @@ Estos elementos permitirán caracterizar mejor los datos y establecer criterios 
 
 ### a) Longitud media de respuestas y su vínculo con el estilo
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image8.png" style="width:6.1375in;height:3.68264in" />
+![](Analisis_prompts_de_la_Arena_media/media/image8.png)
 
 Este gráfico de barras muestra las diferencias entre la longitud media de las respuestas elegidas y las rechazadas por país. Aunque por sí sola la longitud no es determinante al hablar de la calidad de las respuestas, sí puede ofrecer pistas sobre el estilo comunicativo preferido en el alineamiento humano.
 
@@ -423,7 +423,7 @@ Una hipótesis lingüística para la relación entre la longitud y la aceptació
 
 - Valor en la concisión: en algunos países como Paraguay, respuestas breves, pero directas, pueden haber sido preferidas si su contenido era claro y pragmático.
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image9.png" style="width:6.1375in;height:3.68264in" />
+![](Analisis_prompts_de_la_Arena_media/media/image9.png)
 
 El gráfico de violín o boxplot sirve para complementar las observaciones anteriores.
 
@@ -447,13 +447,13 @@ En el siguiente gráfico se muestran los países que participaron en la generaci
 
 Aislar el uso de los conectores revela información acerca del nivel de cohesión discursiva, ya que los conectores son un marcador lingüístico importante que aporta naturalidad y fluidez a los textos, además un mayor número puede indicar una respuesta más estructurada. Por otra parte, si las respuestas elegidas tienen sistemáticamente más conectores que las respuestas rechazadas, podrían reflejar una preferencia del anotador (o del criterio de selección) por respuestas más desarrolladas discursivamente. Por último, comparar los promedios entre países permite observar diferencias estilísticas y culturales. Por ejemplo, un país podría preferir respuestas más directas, mientras que otro inclinarse por las más explicativas. Tal vez se podría inferir que si un país tiene valores muy bajos en ambos tipos de respuestas se deba a que prefiere respuestas breves y/o de estilo directo.
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image10.jpg" style="width:6.1375in;height:3.68264in" />
+![](Analisis_prompts_de_la_Arena_media/media/image10.jpg)
 
 ### c) Registro comunicativo y proximidad interpersonal
 
 La selección de usos de la primera, segunda y tercera persona al comunicarnos puede revelar aspectos del registro, tono comunicativo, proximidad interpersonal y estilo argumentativo. Por ello, es importante observar aquí cuáles son los usos que los evaluadores de los modelos han preferido en los diferentes contextos culturales.
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image11.png" style="width:6.1375in;height:3.68264in" />
+![](Analisis_prompts_de_la_Arena_media/media/image11.png)
 
 El gráfico de barras muestra que la tercera persona es por lejos la más utilizada en todos los países, lo que sugiere una preferencia por estructuras informativas o expositivas. Se prefiere sobre todo la impersonalidad.
 
@@ -463,13 +463,13 @@ Este análisis sirve para entender cómo los modelos tienden a estructurar las r
 
 El mapa de calor que aparece a continuación muestra en detalle la frecuencia de uso de la persona gramatical por país:
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image12.png" style="width:6.1375in;height:3.68264in" />
+![](Analisis_prompts_de_la_Arena_media/media/image12.png)
 
 ### 
 
 ### d) Tiempos verbales en las variantes del español 
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image13.png" style="width:6.1375in;height:3.68264in" />
+![](Analisis_prompts_de_la_Arena_media/media/image13.png)
 
 El gráfico de calor representa la frecuencia de aparición de cuatro tiempos verbales (futuro, pretérito imperfecto, pasado -pretérito perfecto simple o compuesto- y presente) en las respuestas generadas por los modelos (*chosen* y *rejected*) según país. La intensidad del color indica el volumen de ocurrencias.
 
@@ -495,7 +495,7 @@ En cuanto a la distribución de tiempos verbales según la persona gramatical, l
 
 La segunda persona está muy poco presente en todos los tiempos verbales, esto sugiere que los modelos evitan adoptar una voz dirigida al interlocutor, tal vez para mantener la neutralidad y evitar un tono demasiado directo. Con respecto al uso pretérito imperfecto y el pasado estos se concentran en la tercera persona gramatical, lo que refuerza la hipótesis de que estas formas verbales están asociadas a relatos, referencias históricas o explicaciones culturales (como “en el pasado se creía que…” o “la dictadura afectaba a todos los sectores”).
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image14.png" style="width:6.1375in;height:3.68264in" />
+![](Analisis_prompts_de_la_Arena_media/media/image14.png)
 
 ### **e) Registro de tono por país**
 
@@ -505,7 +505,7 @@ El gráfico de barras apiladas representa la frecuencia con la que se emplean lo
 
 Colombia destaca por tener la mayor cantidad de formas formales, esta preferencia está alineada con el uso extendido del “usted” en muchas regiones del país. En contraste, España tiene una clara preferencia por las formas informales, aunque también presenta algunos casos de usos formales. Chile y Perú presentan una distribución mixta, aunque con predominancia informal. México, Nicaragua y Paraguay muestran una baja frecuencia total de registros, pero todos se inclinan hacia lo informal.
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image15.png" style="width:6.1375in;height:3.68264in" />
+![](Analisis_prompts_de_la_Arena_media/media/image15.png)
 
 Este análisis es relevante para el alineamiento lingüístico, pues permite observar cómo los modelos pueden reproducir o acentuar ciertos patrones sociolingüísticos por país. Así, un modelo bien alineado debería ser capaz de ajustar su registro gramatical según el país, el dominio del discurso y el tipo de interacción. El predominio del registro informal podría ser una señal de desequilibrio en los datos de entrenamiento o una falta de sensibilidad a normas pragmáticas más conservadoras o de rangos etarios heterogéneos. Casos como el de Colombia podrían interpretarse como un indicio de mayor adecuación cultural.
 
@@ -515,7 +515,7 @@ Este análisis es relevante para el alineamiento lingüístico, pues permite obs
 
 ¿El español utilizado en cada país tiende a ser más formal, narrativo o descriptivo? ¿Hay algún estilo discursivo que prime por sobre otro en todos los países? La siguiente gráfica permite comparar cómo se distribuyen estilos discursivos en las respuestas elegidas y rechazadas a nivel global, independiente del país de origen del prompt. Los cinco estilos discursivos definidos en este análisis son: narrativo, formal, informal, descriptivo y opinativo.
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image16.png" style="width:6.1375in;height:3.68264in" />
+![](Analisis_prompts_de_la_Arena_media/media/image16.png)
 
 Aquí se puede ver que el estilo preferido por los evaluadores es **el descriptivo**, preferido con mayor frecuencia en las respuestas elegidas, aunque también es el estilo predominante en las respuestas rechazadas. Esto sugiere que, aunque es el estilo predominante, esto no es garantía de que hayan escogido esas respuestas meramente por sus cualidades descriptivas, como desarrollar una idea con claridad y estructura. De hecho, el protagonismo del estilo descriptivo tanto en las respuestas escogidas, como en las rechazadas sugiere que la preferencia debe depender de otros factores.
 
@@ -545,7 +545,7 @@ En países como Chile, Colombia y Perú el **estilo informal** aparece con frecu
 
 El **registro formal** es el menos frecuente e incluso nulo en países como México, Nicaragua y Paraguay.
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image17.png" style="width:6.1375in;height:3.06875in" />
+![](Analisis_prompts_de_la_Arena_media/media/image17.png)
 
 En el caso de las respuestas rechazadas la tendencia le mantiene, aunque llama la atención el aumento de respuestas de estilo formal en España y Perú, esto podría indicar que respuestas demasiado formales o técnicas no necesariamente son valoradas como mejores. En contraste, el estilo informal está menos presente en las respuestas rechazadas que en las escogidas, lo que puede ser un indicador de que en muchos casos la informalidad fue valorado al momento de la selección de la respuesta.
 
@@ -555,9 +555,11 @@ Reflexión final:
 
 Los patrones que muestran las gráficas sugieren que el estilo discursivo podría influir en la preferencia del modelo o del evaluador, aunque esta esta influencia no es homogénea en todos los países. La preferencia de los estilos descriptivo y narrativo se contrapone al rechazo de los estilos formal o poco desarrollados. Además, aparentemente el uso de un estilo informal favorece la elección de la respuesta, especialmente cuando no se contrapone con la claridad del contenido.
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image18.png" style="width:6.1375in;height:3.06875in" />
+![](Analisis_prompts_de_la_Arena_media/media/image18.png)
 
-<img src="C:\Users\const\Desktop\Analisis_prompts_de_la_Arena_media/media/image19.png" style="width:6.1375in;height:3.68264in" />Para cerrar el análisis del estilo de las respuestas y el comportamiento al momento de la elección veamos el siguiente gráfico que muestra la frecuencia de cambio de estilo entre la respuesta elegida y la respuesta rechazada:
+Para cerrar el análisis del estilo de las respuestas y el comportamiento al momento de la elección veamos el siguiente gráfico que muestra la frecuencia de cambio de estilo entre la respuesta elegida y la respuesta rechazada:
+
+![](Analisis_prompts_de_la_Arena_media/media/image19.png)
 
 Aquí se puede observar que, como ya sabemos, España y Colombia son los países con mayor pares de respuestas. Además de eso, aquí podemos ver que en ambos países predomina no cambiar el estilo al momento de elegir una respuesta. Aunque, sobre todo en España, los casos con cambio de estilo existen y corresponden a una proporción importante del total de sus respuestas, lo cual sugiere que en ciertos casos el cambio de estilo podría favorecer la selección de la respuesta.
 
